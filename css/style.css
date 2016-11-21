@@ -1,0 +1,462 @@
+body {
+	font-family: 'Open Sans', sans-serif;
+	letter-spacing: 1.5px;
+	color: #fff;
+}
+
+/***********************************
+			HEADER
+
+*********************************/
+/*Navigation-bar*/
+.navbar.navbar-inverse.navbar-fixed-top {
+	background-color: transparent;
+	opacity: .9;
+	border-width: 0px;
+	transition: all 2s ease-in-out;
+	-webkit-transition: all 2s ease-in-out;
+}
+
+/*Menu of navigation bar*/
+#nav-list > li > a, #nav-list > li > a:focus {
+    color:#fff;
+ 	vertical-align: middle;
+ 	background-color: transparent;
+ 	
+ }
+ #nav-list > li > a:hover{
+	background-color: transparent;
+	border-radius: 50%;
+	font-weight: bold;
+	color: #FFD700;
+}
+
+
+/*Logo on the upper left corner*/
+#logonav {
+	font-family: 'Consolas', monospace;
+	font-weight: bold;
+	font-style: italic;
+	margin-bottom: 10px;
+	margin-top: 10px;
+	color: #FFD700;
+	font-size: 1.1em;
+}
+
+
+#logonav:hover {
+	font-size: 1.3em;
+}
+
+#initials {
+	color: #fff;
+	font-size: 1.2em;
+	margin-left: 3px;
+}
+
+/***********************************
+			HOME PAGE
+
+*********************************/
+#home div.row div.col-xs-11 {
+	position: absolute;
+	top: 60%;
+}
+/*Welcoming message in the centre of page*/
+#welcoming {
+	font-size: 50px;
+	
+}
+#description {
+	font-size: .35em;
+}
+.container-fluid {
+	padding: 0px;
+}
+
+/***********************************
+			ABOUT SESSION
+
+*********************************/
+#about {
+	color: #000;
+	
+}
+/*Title of Session: About me, My portfolio, contact me*/
+h1 {
+	margin-bottom: 0px;
+	margin-top: 100px;
+	color: #000;
+	margin-left: 0px;
+}
+/*Line under Tile of sessions*/
+hr {
+	width: 5%;
+	border-width: 2px;
+	float: left;
+	border-color: #FFD700;
+}
+
+/*Text of About me*/
+#description-about {
+	word-spacing: 2px;
+	text-align: left;	
+	line-height: 250%;	
+}
+
+#description-about div p:nth-child(1)  {
+	margin-bottom: 30px;
+}
+
+/*Row that includes text and photo*/
+#about div.row div.row {
+	margin-top: 120px;
+} 
+#about.container-fluid {
+	margin-top: 100px;
+}
+	
+
+/***********************************
+		MY PORTFOLIO SESSION
+
+*********************************/
+
+/*Every single frame */
+#my-portfolio .project {
+	width: 100%;
+	height: auto;
+	margin: 0px auto 5px;	
+	
+	
+}
+
+/*Every row. To distantiate them*/
+#my-portfolio .col-md-4.col-xxs-12 {
+	margin-bottom: 80px;
+}
+
+/*The frames altogether*/
+#my-portfolio .row .row{
+	margin-top: 120px;	
+	margin-bottom: 80px;
+}
+
+
+/*Whole Session. To give the background color*/
+#my-portfolio {
+	background-color: #f8f8ff;
+	margin-top: 100px;
+}
+
+/*Each tiles. Help to handle the hover function and transition of element*/
+.project {
+	position: relative;
+	transition: all 0.5s ease-in;
+	-webkit-transition: all 0.5s ease-in;
+}
+
+a.proj-title {
+	transition: all 0.5s ease-out;
+	-webkit-transition: all 0.5s ease-out;
+	position: absolute;
+	top: 50%;
+	left: 35%;
+	color: #fff;
+	text-decoration: none;
+	font-size: 16px;
+	
+}
+a.proj-title > span {
+	font-weight: bold;
+	font-size: 1.2em;
+}
+
+/*Eliminate blue border on the project title when hovering it*/
+div.row div.col-xxs-12 a.proj-title:focus{
+	outline: none !important;
+}
+
+/*Margin from project tile and the actual title of the project*/
+#my-portfolio div.row div.row div.col-xxs-12 a.proj-title div.text-center {
+	margin-top: 20px;
+}
+
+/*Style of the modal dialogs for any single projects*/
+/*Locating the window*/
+.modal {
+	top:40%;
+
+}
+.modal-dialog {	
+	width: 60%;
+}
+.modal-content {
+	color: #000;
+}
+
+.modal-body div.text-center button {
+	margin-top: 30px;
+}
+.modal-body div p {
+	text-align: justify;
+	margin-right: 50px;
+	margin-left: 50px;
+}
+.modal-content .modal-header button.close:focus {
+	outline: none;
+}
+
+/***********************************
+		CONTACT ME SESSION
+
+*********************************/
+
+/*Contact Me text*/
+#contact-me-title {
+	color: #fff;
+}
+
+/*Entire page except title*/
+#contact-content {
+	margin-top: 120px;	
+	margin-right: 0px;
+
+}
+
+/*Whole session*/
+#contact {	
+	background: url("../images/823425-gray-wallpaper.jpg") no-repeat; 	
+}
+
+
+/*Contact info text*/
+#contact .row .row .row #info {
+	display: block;
+	margin-bottom: 30px;
+	font-size: 1.4em;
+
+}
+/*Leave me a message text*/
+ #contact #message-title {
+ 	display: block;
+	margin-bottom: 45px;
+	font-size: 1.5em;
+ }
+ /*Icons of mail and phone*/
+.glyphicon {
+	margin: 0px 20px 40px 10px; 
+	opacity: .8;
+	
+}
+/*phone number and email text*/
+#phone-number, #email-address {
+	white-space: pre;
+	font-size: 1.1em;
+}
+
+/*LEAVE ME A MESSAGE*/
+/*Text box for name email and message*/
+input, textarea {
+	margin-bottom: 20px;	
+}
+
+
+/*****************
+
+	FOOT SESSION
+
+*****************/
+
+
+/*The writing at very bottom*/
+.panel-footer > p {	
+	color: #000;
+	margin-top: 10px;
+}
+
+/*Linkedin and github icons*/
+a.btn-linkedin, a.btn-github {
+	margin-right: 50px;
+}
+
+/*Area that includes all the social icons*/
+#foot > div.text-center {
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+
+#foot {
+	padding: 0;
+}
+
+/*Codepen icon*/
+#codepen-icon {
+	content: '\f216';
+	color: #000;
+	border: 3px solid #000; 
+	font-size: 32px;
+	border-radius: 50%;
+	margin-left: -12px;
+}
+#codepen {
+	padding: 0;
+	text-decoration: none;
+}
+
+
+/*MEDIA QUERIES*/
+
+/*MEDIUM SCREEN, TABLET*/
+@media (min-width: 768px) and (max-width: 991px) {
+	#phone-number, #email-address {
+			font-size: .9em;
+		}
+}
+
+
+/*SMALL SCREENS*/
+@media(max-width: 767px) {
+
+	/*HEADER */
+	.navbar-header button.navbar-toggle {
+		border-color: #fff;
+		margin-top: 20px;
+		
+	}
+	
+	#logonav {
+		font-size: 1em;		
+		margin-left: 15px;		
+	}
+	
+	#initials {
+		font-size: 1.1em;
+	}
+
+	#logonav:hover {
+		font-size: 1.2em;
+	}
+	.navbar.navbar-inverse.navbar-fixed-top {
+		background-color: #000;
+	
+	}	
+	
+	/*HOME PAGE*/
+	#welcoming {		
+		font-size: 5vw;
+	}
+	#home div.row div.col-xs-11 {	
+		top: 50%;
+	}
+	/*ABOUT SESSION*/
+	
+	#description-about {	
+		margin-bottom: 20px;		
+		
+	}
+	
+	h1 {		
+		margin-top: 100px;		
+		font-size: 2.2em;
+	}
+
+	/*My Portfolio Session*/
+	.col-md-4 div {
+		height: 200px;
+	}
+
+	
+	/*CONTACT SESSION*/
+	a.visible-xs {
+		text-decoration: none;	
+		
+	}
+	
+	#call-btn .glyphicon.glyphicon-earphone {		
+		margin-right: 20px;
+		margin-bottom: 5px;
+	}
+	/*button for calling phone number*/
+	#call-btn > a {
+		
+		color: #fff;
+		font-size: 1.2em;
+		width: 70%;
+		margin-left: auto;
+		margin-right: auto;
+		border: 2px solid #555;
+	    background-color: #f6b319;
+	   
+	}
+
+	/*Line that separates Contact info from leave me a message*/
+	hr.visible-xs {
+		width: 50%;
+		border-color: #fff;
+		margin-left: 25%;
+		margin-right: 25%;
+		margin-bottom: 60px;
+		margin-top: 60px;
+	}
+
+	/*Align every text inside contact info and leave a message sections in the center*/
+	#contact div.row div.row .col-xs-12 {
+		text-align: center;
+	}
+
+	#contact {
+		margin-bottom: 20px;
+	}
+	@media(min-width: 471px) and (max-width: 600px) {
+		#welcoming {
+			font-size: 2em;
+			
+		}
+		#home div.row div.col-xs-11 {
+			top: 40%;
+			
+		}
+	}
+	/*VERY SMALL SCREENS*/
+	@media(max-width: 470px) {
+		#welcoming {
+			font-size: 1.5em;
+			
+		}
+		#home div.row div.col-xs-11 {
+			top: 30%;
+			
+		}
+		#description{
+			font-size: .5em;
+		}
+
+		#phone-number, #email-address {
+			font-size: .9em;
+		}
+		.glyphicon.glyphicon-envelope {
+			margin-bottom: 50px;
+
+		}
+		#call-btn > a {
+			width: 80%;
+		}
+
+		
+		/*New class for very small screen*/
+		.col-xxs-12 {
+			width: 100%;
+			margin-left: auto;
+			margin-right: auto;
+			
+		}
+		/*Fix the width of project's frame for small screens*/
+		.col-xxs-12 .project  img {
+			width: 423px;
+		}
+		
+	}
+	
+	
+}
