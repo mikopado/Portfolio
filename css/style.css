@@ -289,7 +289,9 @@ a.btn-linkedin, a.btn-github {
 #foot {
 	padding: 0;
 }
-
+#codepen-icon:focus{
+	outline: none;
+}
 /*Codepen icon*/
 #codepen-icon {
 	content: '\f216';

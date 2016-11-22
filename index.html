@@ -85,7 +85,7 @@
 					</div>
 
 				<div id="project2" class="col-md-4 col-xs-6 col-xxs-12">
-					<div class="project"><a data-toggle="modal" data-keyboard="true" href="#work2"><img class="img-responsive" src="images/utriss.png"></a></div><a data-toggle="modal" data-keyboard="true" href="#work2" class="proj-title sr-only"><span>Project Title</span><div class="text-center">UTriSS</div></a>
+					<div class="project"><a data-toggle="modal" data-keyboard="true" href="#work2"><img class="img-responsive" src="images/utriss-game.png"></a></div><a data-toggle="modal" data-keyboard="true" href="#work2" class="proj-title sr-only"><span>Project Title</span><div class="text-center">UTriSS</div></a>
 				</div>
 
 				<div id="project3" class="col-md-4 col-xs-6 col-xxs-12">
@@ -97,7 +97,7 @@
 				</div>
 
 				<div id="project5" class="col-md-4 col-xs-6 col-xxs-12">
-					<div class="project"><a data-toggle="modal" data-keyboard="true" href=""><img class="img-responsive" src="images/ComingSoon.jpg"></a></div><a data-toggle="modal" data-keyboard="true" href="" class="proj-title sr-only"><span>Coming Soon</span></a>
+					<div class="project"><a data-toggle="modal" data-keyboard="true" href="#work5"><img class="img-responsive" src="images/oop-pic.jpg"></a></div><a data-toggle="modal" data-keyboard="true" href="#work5" class="proj-title sr-only"><span>Project Title</span><div class="text-center">OOP Example</div></a>
 				</div>
 
 				<div id="project6" class="col-md-4 col-xs-6 col-xxs-12">
@@ -138,13 +138,13 @@
 			<div class="row">
 				<div class="col-xs-12">
 					<div><span id="message-title">Leave me a Message</span>
-						<form name="send-message" method="post" action="mailto:michele.ercolino45@gmail.com">
+						<form name="send-message" action="php/sendmail.php" method="post">
 							<div id="name-mail" class="row">
 								<div class="col-lg-6 col-xs-12"><input type="text-box" name="name" placeholder="Name" class="form-control"></div>
 								<div class="col-lg-6 col-xs-12"><input type="email" name="email" placeholder="E-Mail" class="form-control"></div>
 							</div>				
 								<textarea name="message" placeholder="Message" class="form-control" rows="6"></textarea>			
-								<button type="submit" class="btn btn-info">SEND MESSAGE</button>
+								<button name="submitted" type="submit" class="btn btn-info edit-buttons">SEND MESSAGE</button>
 							
 						</form>
 					</div>
@@ -162,19 +162,20 @@
 <!-- Foot Session -->
 <div id="foot" class="container-fluid">
 	<div class="text-center">
-		<a class="btn btn-social-icon btn-linkedin" href="https://ie.linkedin.com/in/micheleercolino" target="_blank" data-toggle="tooltip" data-placement="bottom" title="LinkedIn">
+		<a class="btn btn-social-icon btn-linkedin edit-buttons" href="https://ie.linkedin.com/in/micheleercolino" target="_blank" data-toggle="tooltip" data-placement="bottom" title="LinkedIn">
 		    <span class="fa fa-linkedin"></span>
 		</a>
-		<a class="btn btn-social-icon btn-github" href="https://github.com/mikopado" target="_blank" data-toggle="tooltip"  data-placement="bottom" title="GitHub">
+		<a class="btn btn-social-icon btn-github edit-buttons" href="https://github.com/mikopado" target="_blank" data-toggle="tooltip"  data-placement="bottom" title="GitHub">
 		    <span class="fa fa-github"></span>
 		</a>
-		<a id="codepen" class="btn" href="http://codepen.io/mikopado/#" target="_blank" data-toggle="tooltip" data-placement="bottom" title="CodePen"><span id="codepen-icon" class="genericon genericon-codepen"></span></a>
+		<a id="codepen" class="btn edit-buttons" href="http://codepen.io/mikopado/#" target="_blank" data-toggle="tooltip" data-placement="bottom" title="CodePen"><span id="codepen-icon" class="genericon genericon-codepen"></span></a>
 	</div>
 
 	<footer class="panel-footer">
 		<p class="text-center">Written and Coded by <span class="text-primary">Michele Ercolino</span></p>
 	</footer>
 </div>
+
 
 <!-- Modal Windows for My Portfolio -->
 <!-- Project1 -->
@@ -191,7 +192,7 @@
 	        	<div>
 	        		<p>GeoPhy is a tool built in WinForms to edit raw GPS data from geophysical survey acquisitions (i.e. Resistivity and Seismic Refraction) into an AutoCAD format. Built to optimize the process of editing data before inputting them in autoCAD. Still in progress the export phase of the CSV file to .dxf file.</p>
 	        		<div class="text-center">	        		
-	        			<button type="button" class="btn btn-default" onclick="openLink('https://github.com/mikopado/GeoPhy-data-converter-tool/tree/master/GeoPhyGPS')">View Code</button>
+	        			<button type="button" class="btn btn-default edit-buttons" onclick="openLink('https://github.com/mikopado/GeoPhy-data-converter-tool/tree/master/GeoPhyGPS')">View Code</button>
 	        		</div>
 	        	</div>
 	        </div>
@@ -212,8 +213,8 @@
 	        	<div>
 	        		<p>UTriSS is a Tic Tac Toe Game version built using Xamarin.Android. It was first built in console as an exercise for practicing C#, then I decided to built an Andoid App taking advantage of Xamarin.Android that it allows to built android app written in C#. You can view the code in GitHub or download the .apk file to test it on your devices.</p>
 	        		<div class="text-center">
-	        			<button type="button" class="btn btn-default" onclick="openLink('https://github.com/mikopado/UTriSS-aka-TicTacToe-game')">View Code</button>
-	        			<a href="/apk file/UTriSS.UTriSS-Signed.apk" download><button type="button" class="btn btn-default">Download .apk file</button></a>
+	        			<button type="button" class="btn btn-default edit-buttons" onclick="openLink('https://github.com/mikopado/UTriSS-aka-TicTacToe-game')">View Code</button>
+	        			<a href="/apk file/UTriSS.UTriSS-Signed.apk" download><button type="button" class="btn btn-default edit-buttons">Download .apk file</button></a>
 	        		</div>
 	        	</div>
 	        </div>
@@ -234,7 +235,7 @@
 	        	<div>
 	        		<p>Back in the days when Pong was a famous desktop game. The game is a two players game. If you press View Code button you can check the code and if you press run you can enjoy the actual game. The game has been built in Python for an assignment of Interactive Python course in Coursera. </p>
 	        		<div class="text-center">
-	        			<button type="button" class="btn btn-default" onclick="openLink('http://www.codeskulptor.org/#user41_B4MZTguIRG_2.py')">View Code</button>
+	        			<button type="button" class="btn btn-default edit-buttons" onclick="openLink('http://www.codeskulptor.org/#user41_B4MZTguIRG_2.py')">View Code</button>
 	        		</div>
 	        	</div>
 	        </div>
@@ -255,7 +256,7 @@
 	        	<div>
 	        		<p>StopWatch is a game built in Python for an Interactive Python course in Coursera. It's simple game that consists in proving the capacity of stopping the watch at :00. The app will count how many times you stop the watch on time over the total attempts. </p>
 	        		<div class="text-center">
-	        			<button type="button" class="btn btn-default" onclick='openLink("http://www.codeskulptor.org/#user41_xyxDSU66rh_2.py")'>View Code</button>
+	        			<button type="button" class="btn btn-default edit-buttons" onclick='openLink("http://www.codeskulptor.org/#user41_xyxDSU66rh_2.py")'>View Code</button>
 	        		</div>
 	        	</div>
 	        </div>
@@ -269,13 +270,15 @@
 	    <!-- Modal content-->
 	    <div class="modal-content">
 	      <div class="modal-header">
+	      OOP Assignment
 	        <button type="button" class="close" data-dismiss="modal">&times;</button>
 	      </div>
 	        <div class="modal-body">
 	        	<div>
-	        		<p>Project Title: </p>
+	        		<p>The project is an assignment which was submitted for OOP module in Certificate in Programming at Dublin Business School. 
+	        		It's a good example of the main features of object-oriented paradigm using C#. The application is built in WinForms for a better user interface.</p>
 	        		<div class="text-center">
-	        			<button type="button" class="btn btn-default">View Code</button>
+	        			<button type="button" class="btn btn-default edit-buttons" onclick='openLink("https://github.com/mikopado/OOP-Assignment")'>View Code</button>
 	        		</div>
 	        	</div>
 	        </div>
@@ -295,7 +298,7 @@
 	        	<div>
 	        		<p>Project Title: </p>
 	        		<div class="text-center">
-	        			<button type="button" class="btn btn-default">View Code</button>
+	        			<button type="button" class="btn btn-default edit-buttons">View Code</button>
 	        		</div>
 	        	</div>
 	        </div>
@@ -303,7 +306,7 @@
 	</div>
 </div>
 	<script src="js/jquery-3.1.1.min.js"></script>
-	<script src="js/bootstrap.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>	
 	<script src="js/script.js"></script>
 </body>
 </html>

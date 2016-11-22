@@ -13,7 +13,7 @@ $(function () {
 	});	
 
 
-	$("#menu-collapse").on('hidden.bs.collapse', function() {//If menu is hidden cahnges the color of button to black
+	$("#menu-collapse").on('hidden.bs.collapse', function() {//If menu is hidden changes the color of button to black
 		$(".menu-active").css("background-color", "#000");
 		isCollapsed = false;
 	});
@@ -107,4 +107,9 @@ $(function () {
 	openLink = function(url) {//Function to open link from View Code buttons
 		window.open(url, "_blank");
 	};
+
+
+	$('.edit-buttons').mouseup(function(){//Let buttons loose the focus after click on them
+		$(this).blur();
+	});
 });
