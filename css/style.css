@@ -122,24 +122,17 @@ hr {
 
 *********************************/
 
-/*Every single frame */
-#my-portfolio .project {
-	width: 100%;
-	height: auto;
-	margin: 0px auto 5px;	
-	
-	
-}
-
 /*Every row. To distantiate them*/
 #my-portfolio .col-md-4.col-xxs-12 {
 	margin-bottom: 80px;
+  	
 }
 
 /*The frames altogether*/
 #my-portfolio .row .row{
 	margin-top: 120px;	
 	margin-bottom: 80px;
+	
 }
 
 
@@ -181,7 +174,9 @@ div.row div.col-xxs-12 a.proj-title:focus{
 #my-portfolio div.row div.row div.col-xxs-12 a.proj-title div.text-center {
 	margin-top: 20px;
 }
-
+.visible-large {
+	display: none;
+}
 /*Style of the modal dialogs for any single projects*/
 /*Locating the window*/
 .modal {
@@ -227,6 +222,7 @@ div.row div.col-xxs-12 a.proj-title:focus{
 /*Whole session*/
 #contact {	
 	background: url("../images/823425-gray-wallpaper.jpg") no-repeat; 	
+  background-size: cover;
 }
 
 
@@ -289,9 +285,7 @@ a.btn-linkedin, a.btn-github {
 #foot {
 	padding: 0;
 }
-#codepen-icon:focus{
-	outline: none;
-}
+
 /*Codepen icon*/
 #codepen-icon {
 	content: '\f216';
@@ -308,14 +302,41 @@ a.btn-linkedin, a.btn-github {
 
 
 /*MEDIA QUERIES*/
-
-/*MEDIUM SCREEN, TABLET*/
-@media (min-width: 768px) and (max-width: 991px) {
-	#phone-number, #email-address {
-			font-size: .9em;
-		}
+@media (min-width: 1441px) { /*Very large screens*/
+	body {
+		font-size: 2em;
+	}
+	#welcoming {
+	font-size: 4em;
+	
+	}
+	a.proj-title {		
+    	left: 25%;
+	}
+	#description-about {
+    word-spacing: 4px;    	
+    line-height: 350%;	
+  }
+  #description-about div p:nth-child(1)  {
+	margin-bottom: 50px;
+  }
+  .col-xl-3 {		
+    	width: 25%;
+	}
+  .visible-large {
+	display: block;
+	}
 }
-
+/*MEDIUM SCREEN, TABLET, LAPTOP*/
+@media (min-width: 768px) and (max-width: 1199px) {
+	a.proj-title {
+		font-size: .9em;
+    	left: 35%;
+	}
+	#phone-number, #email-address {
+			font-size: .7em;
+		}  
+}
 
 /*SMALL SCREENS*/
 @media(max-width: 767px) {
@@ -355,7 +376,6 @@ a.btn-linkedin, a.btn-github {
 	
 	#description-about {	
 		margin-bottom: 20px;		
-		
 	}
 	
 	h1 {		
@@ -364,8 +384,10 @@ a.btn-linkedin, a.btn-github {
 	}
 
 	/*My Portfolio Session*/
-	.col-md-4 div {
-		height: 200px;
+	
+  	a.proj-title {
+		font-size: .9em;
+    	left: 30%;
 	}
 
 	
@@ -380,15 +402,14 @@ a.btn-linkedin, a.btn-github {
 		margin-bottom: 5px;
 	}
 	/*button for calling phone number*/
-	#call-btn > a {
-		
+	#call-btn > a {		
 		color: #fff;
 		font-size: 1.2em;
 		width: 70%;
 		margin-left: auto;
 		margin-right: auto;
 		border: 2px solid #555;
-	    background-color: #f6b319;
+	  background-color: #f6b319;
 	   
 	}
 
@@ -410,16 +431,8 @@ a.btn-linkedin, a.btn-github {
 	#contact {
 		margin-bottom: 20px;
 	}
-	@media(min-width: 471px) and (max-width: 600px) {
-		#welcoming {
-			font-size: 2em;
-			
-		}
-		#home div.row div.col-xs-11 {
-			top: 40%;
-			
-		}
-	}
+}
+	
 	/*VERY SMALL SCREENS*/
 	@media(max-width: 470px) {
 		#welcoming {
@@ -453,12 +466,12 @@ a.btn-linkedin, a.btn-github {
 			margin-right: auto;
 			
 		}
-		/*Fix the width of project's frame for small screens*/
-		.col-xxs-12 .project  img {
-			width: 423px;
-		}
 		
+    a.proj-title {
+		font-size: 1em;
+    	left: 35%;
+	  }
 	}
 	
 	
-}
+
